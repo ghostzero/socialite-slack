@@ -13,6 +13,6 @@ class SlackExtendSocialite
      */
     public function handle(SocialiteWasCalled $socialiteWasCalled)
     {
-        $socialiteWasCalled->extendSocialite('discord', __NAMESPACE__.'\Provider');
+        $socialiteWasCalled->extendSocialite('slack', __NAMESPACE__.'\Provider');
     }
 }
