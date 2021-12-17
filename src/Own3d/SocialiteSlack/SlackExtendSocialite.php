@@ -9,10 +9,10 @@ class SlackExtendSocialite
     /**
      * Register the provider.
      *
-     * @param \SocialiteProviders\Manager\SocialiteWasCalled $socialiteWasCalled
+     * @param SocialiteWasCalled $socialiteWasCalled
      */
     public function handle(SocialiteWasCalled $socialiteWasCalled)
     {
-        $socialiteWasCalled->extendSocialite('slack', __NAMESPACE__.'\Provider');
+        $socialiteWasCalled->extendSocialite('slack', __NAMESPACE__ . '\Provider');
     }
 }
